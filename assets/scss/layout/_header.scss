@@ -1,0 +1,36 @@
+.header {
+  background: url("../images/bg-header.jpg") no-repeat;
+  background-position: center center;  
+  background-size: cover;
+
+  // Contenedor menu + redes sociales
+  &__navegacion { 
+    display: flex;
+    flex-wrap: wrap;       
+
+    .boton-menu {
+      background: transparent;
+      border: 0;
+      color: $azul-medio;
+      cursor: pointer;
+      font-size: 2rem;
+      transition: all 0.5s ease;
+      &:hover {
+        color: darken($azul-medio, 10%);
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .navigation {
+      flex: 0 1 100%;
+      a {
+        display: block;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  
+}
