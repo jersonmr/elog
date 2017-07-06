@@ -1,36 +1,57 @@
 .header {
   background: url("../images/bg-header.jpg") no-repeat;
   background-position: center center;  
+  background-attachment: fixed;
   background-size: cover;
 
-  // Contenedor menu + redes sociales
-  &__navegacion { 
-    display: flex;
-    flex-wrap: wrap;       
-
-    .boton-menu {
-      background: transparent;
-      border: 0;
-      color: $azul-medio;
-      cursor: pointer;
-      font-size: 2rem;
-      transition: all 0.5s ease;
-      &:hover {
-        color: darken($azul-medio, 10%);
-      }
-      &:focus {
-        outline: 0;
-      }
+  &__logo, &__menu {
+    width: 100%;    
+    @include media(sm) {
+      width: 50%;
     }
-
-    .navigation {
-      flex: 0 1 100%;
-      a {
-        display: block;
-        padding: 0.5rem 0;
-      }
+  }
+  &__logo {
+    text-align: center;
+    @include media(sm) {
+      text-align: left;
     }
   }
 
+  // Contenedor menu + redes sociales
+  &__menu {
+    margin-top: 0.5rem;    
+  }
+  &__sociales {
+    a {
+      margin: 0 0.25rem;
+    }
+  }
   
+  .boton-menu {
+    background: transparent;
+    border: 0;
+    color: $marron-medio;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 0.5s ease;
+    &:hover {
+      color: darken($marron-medio, 10%);
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    text-align: center;            
+    a {
+      border-bottom: 4px solid $naranja-medio;
+      color: #766c64;
+      display: block;
+      font-family: $roboto-font;
+      font-size: em(18);
+      padding: 0.5rem 0;
+    }
+  }
 }
