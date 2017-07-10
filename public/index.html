@@ -14,15 +14,138 @@
   </head>
   <body>
     <header class="header">
-      <div class="container d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center flex-wrap py-3">
+      <div class="container d-flex flex-column flex-sm-row justify-content-center align-items-center flex-wrap pt-3">
         <div class="header__logo"><a href="index.html"><img src="images/logo-elog.svg" alt="Logo ELOG" width="170"/></a></div>
-        <div class="header__menu d-flex justify-content-between justify-content-sm-end flex-wrap">
+        <div class="header__menu d-flex justify-content-between justify-content-md-end flex-md-column align-items-end flex-wrap">
           <div class="header__sociales"><a href="#"><img src="images/icono-facebook-header.svg" alt="icono facebook"/></a><a href="#"><img src="images/icono-twitter-header.svg" alt="icono twitter"/></a><a href="#"><img src="images/icono-instagram-header.svg" alt="icono instagram"/></a></div>
-          <button class="boton-menu d-lg-none" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <button class="boton-menu d-block d-md-none" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <nav class="collapse header__nav" id="menu-principal"><a class="header__link" href="#" title="title">NOSOTROS </a><a class="header__link" href="#" title="title">SERVICIOS </a><a class="header__link" href="#" title="title">VENTAJAS</a><a class="header__link" href="#" title="title">CONTACTO </a></nav>
         </div>
-        <nav class="collapse header__nav" id="menu-principal"><a class="header__link" href="#" title="title">NOSOTROS </a><a class="header__link" href="#" title="title">SERVICIOS </a><a class="header__link" href="#" title="title">VENTAJAS</a><a class="header__link" href="#" title="title">CONTACTO </a></nav>
       </div>
     </header>
+    <section class="slider"><img class="slider__img" src="images/image-slider-1.jpg" alt="Slider 1"/>
+      <div class="container"></div>
+      <div class="slider__texto">
+        <h1>TEXTO DESTACADO</h1>
+        <h2>TEXTO COMPLEMENTARIO</h2>
+      </div>
+    </section>
+    <!-- Seccion de servicios destacados-->
+    <div class="services-featured">
+      <div class="container d-sm-flex">
+        <article class="services-featured__item services-featured__item--light"><img class="services-featured__img" src="images/imagen-camaras-de-frio.jpg" alt="Camara de frio"/>
+          <div class="services-featured__text">
+            <h2 class="services-featured__title">CÁMARAS DE FRIO</h2>
+            <h4 class="services-featured__subtitle">Algún texto relacionado</h4>
+            <p class="services-featured__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum placeat tempora et explicabo dolor iste, impedit voluptatibus praesentium deleniti fugiat facere quo at voluptates repudiandae in, quibusdam aliquam excepturi nemo?</p><a class="services-featured__link" href="#"><img src="images/icono-mas-blanco.svg"/></a>
+          </div>
+        </article>
+        <article class="services-featured__item services-featured__item--mid"><img class="services-featured__img" src="images/imagen-packing.jpg" alt="Camara de frio"/>
+          <div class="services-featured__text">
+            <h2 class="services-featured__title">PICKING Y PACKING</h2>
+            <h4 class="services-featured__subtitle">Algún texto relacionado</h4>
+            <p class="services-featured__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum placeat tempora et explicabo dolor iste, impedit voluptatibus praesentium deleniti fugiat facere quo at voluptates repudiandae in, quibusdam aliquam excepturi nemo?</p><a class="services-featured__link" href="#"><img src="images/icono-mas-blanco.svg"/></a>
+          </div>
+        </article>
+        <article class="services-featured__item services-featured__item--dark"><img class="services-featured__img" src="images/imagen-inventario.jpg" alt="Camara de frio"/>
+          <div class="services-featured__text">
+            <h2 class="services-featured__title">INVENTARIOS</h2>
+            <h4 class="services-featured__subtitle">Algún texto relacionado</h4>
+            <p class="services-featured__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum placeat tempora et explicabo dolor iste, impedit voluptatibus praesentium deleniti fugiat facere quo at voluptates repudiandae in, quibusdam aliquam excepturi nemo?</p><a class="services-featured__link" href="#"><img src="images/icono-mas-blanco.svg"/></a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- Listado de servicios-->
+    <div class="services">
+      <div class="container">
+        <h1 class="services__title">NUESTROS SERVICIOS PARA USTED</h1>
+        <h2 class="services__subtitle">TEXTO DESTACANDO LOS SERVICIOS</h2>
+        <div class="services__list">
+          <div class="services__item">
+            <div class="services__icon"><img src="images/icono-mas-blanco.svg" alt="icono mas"/></div>
+            <div class="services__description">
+              <h4>RECEPCIÓN Y CONTROL DE MERCADERÍA</h4>
+              <p>Lorem ipsum dolor sit amet.            </p>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon"><img src="images/icono-mas-blanco.svg" alt="icono mas"/></div>
+            <div class="services__description">
+              <h4>FRACCIONAMIENTO</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.           </p>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon"><img src="images/icono-mas-blanco.svg" alt="icono mas"/></div>
+            <div class="services__description">
+              <h4>RE-ETIQUETADO</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.    </p>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon services__icon--mid"><img src="images/icono-mas-blanco.svg" alt="icono mas"/></div>
+            <div class="services__description">
+              <h4>BÓVEDAS DE SEGURIDAD</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing. </p>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon services__icon--mid"><img src="images/icono-mas-blanco.svg" alt="icono mas"/></div>
+            <div class="services__description">
+              <h4>PROYECTOS FABRILES</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.    </p>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon services__icon--mid"><img src="images/icono-mas-blanco.svg" alt="icono mas"/></div>
+            <div class="services__description">
+              <h4>ASESORAMIENTO</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing. </p>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon services__icon--light"><img src="images/icono-mas-blanco.svg" alt="icono mas"/></div>
+            <div class="services__description">
+              <h4> <a href="#">CONOZCA TODOS NUESTROS SERVICIOS           </a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ventajas-->
+    <section class="advantage py-5">
+      <div class="container">
+        <h1 class="advantage__title">TEXTO DESTACANDO UNA VENTAJA</h1>
+        <h2 class="advantage__subtitle">TEXTO COMPLEMENTARIO</h2>
+        <p class="advantage__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi inventore dolorum repellat! Minus deleniti quas consequatur nemo?</p><a class="advantage__btn" href="#"><img src="images/icono-mas-naranja.svg" alt="icono mas"/>LEER MÁS</a>
+      </div>
+    </section>
+    <!-- Ubicacion-->
+    <section class="location py-5">
+      <div class="container d-sm-flex justify-content-center">
+        <div class="location__map"><img src="images/mapa-ejemplo.jpg" alt="Mapa"/></div>
+        <div class="location__data">
+          <article class="location__item">
+            <h4 class="location__title"><img src="images/icono-locacion-naranja.svg"/>UBÍQUENOS</h4>
+            <p class="location__description">Texto correspondiente a la dirección completa detallada.<br/>Continuación del texto de la ubicación<br/>CP ANC00ZX</p>
+          </article>
+          <article class="location__item">
+            <h4 class="location__title"><img src="images/icono-telefono-naranja.svg"/>CONTÁCTENOS</h4>
+            <p class="location__description">(1234) 999 6745 - (5678) 444 2255<br/>direccióncorreo@elog.com</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer class="footer py-5">
+      <div class="container-fluid"><img class="footer__img" src="images/logo-elog-footer.svg" alt="Logo ELOG Footer"/>
+        <nav class="footer__menu"><a href="#">NOSOTROS</a><a href="">SERVICIOS</a><a href="">VENTAJAS</a><a href="">CONTACTO</a></nav>
+        <div class="footer__sociales"><a href="#"><img src="images/icono-facebook-footer.svg" alt="Facebook"/></a><a href="#"><img src="images/icono-twitter-footer.svg" alt="Twitter"/></a><a href="#"><img src="images/icono-instagram-footer.svg" alt="Instagram"/></a></div>
+      </div>
+      <div class="footer__copyright">
+        <p>AQUÍ PODRÁN IR SILUETAS DE LOGOS DE ASOCIADOS IMPORTANTES O AFINES</p>
+      </div>
+    </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.js"></script>
   </body>

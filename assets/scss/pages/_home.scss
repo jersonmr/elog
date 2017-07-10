@@ -1,0 +1,295 @@
+/*
+|--------------------------------------------------
+|  SECCION SLIDER
+|--------------------------------------------------
+*/
+.slider {
+	border: 0;
+	position: relative;
+	img {
+		border: 0;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.container {
+		position: relative;
+	}
+	&__texto {
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 0.5rem 0.5rem 0 0;		
+		display: none;
+		padding: 1rem;
+		position: absolute;		
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-family: $roboto-font;
+		@include media(sm) {
+			display: inline-block;
+		}
+		h1 {
+			color: #fff;
+			font-size: em(40);
+			text-align: right;			
+		}
+		h2 {
+			color: #fff2d9;
+			font-size: em(20);
+			text-align: right;
+		}
+	}
+}
+/*
+|--------------------------------------------------
+|  SECCION SERVICIOS DESTACADOS
+|--------------------------------------------------
+*/
+.services-featured {
+	background: linear-gradient(to bottom, $light-brown 50%, $mid-brown 50%, $mid-brown 75%, #fff 75%);	
+	border-top: 0.5rem solid $mid-brown;
+	position: relative;
+
+	.container {
+		border-top: 0.5rem solid $dark-brown;
+		margin-top: -0.5rem;
+		padding: 0;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;		
+		justify-content: flex-start;
+		font-family: $roboto-font;		
+		&--light {
+			background-color: $light-orange;			
+			color: #5c3900;
+		}
+		&--mid {
+			background-color: $mid-orange;
+			color: #4a1b00;
+		}
+		&--dark {
+			background-color: $dark-orange;
+			color: #290b00;
+		}		
+		@include media(sm) {			
+			width: 33.33%;
+		}
+	}	
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		padding: 1rem;
+	}
+
+	&__title {
+		color: #fff;
+		font-size: em(28);
+	}
+
+	&__subtitle {
+		color: #fff2d9;
+		font-size: em(20);		
+	}
+
+	&__description {
+		font-size: em(17);
+		line-height: 1.2;
+		margin: 1rem 0;
+	}
+
+	&__link {		
+		margin-top: auto;		
+		transition: all 0.5s ease;
+		display: block;
+		text-align: center;
+		img {
+			transition: all 1s ease;
+			&:hover {
+				transform: rotateY(360deg);
+        transform-style: preserve-3d;
+			}
+		}
+	}
+}
+
+/*
+|--------------------------------------------------
+|  SECCION LISTADO DE SERVICIOS
+|--------------------------------------------------
+*/
+.services {
+	background-color: #fff;	
+	font-family: $roboto-font;
+	margin-top: 4rem;	
+	&__title {
+		color: $mid-brown;
+		font-size: em(30);
+		text-align: center;
+		@include media(sm) {
+			font-size: em(40);
+		}
+	}
+	&__subtitle {
+		color: #8a827c;
+		font-size: em(24);
+		text-align: center;
+	}
+	&__list {		
+		margin: 2rem auto;
+		@include media(sm) {
+			display: flex;			
+			justify-content: space-between;
+			flex-wrap: wrap;			
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2rem;
+		@include media(sm) {
+			flex-basis: calc(50% - 0.5rem);						
+			&:last-child {
+				margin: auto;
+				width: 100%;				
+			}
+		}		
+		@include media(md) {
+			flex-basis: calc(33.33% - 0.5rem);
+		}
+	}
+	&__icon {
+		background-color: $dark-orange;
+		border-radius: 0.5rem;
+		flex-basis: 20%;
+		margin-right: 0.5rem;
+		text-align: center;
+		padding: 0.5rem;
+		&--mid {
+			background-color: $mid-orange;
+		}
+		&--light {
+			background-color: $light-orange;
+		}
+	}
+	&__description {
+		flex-basis: 80%;
+		h4, a {			
+			color: #483b30;
+			font-size: em(18);
+			font-weight: bold;
+			margin-bottom: 0.25rem;
+			text-transform: uppercase;						
+		}
+		p {
+			color: #8a827c;
+			font-size: em(14);
+		}
+	}
+}
+
+/*
+|--------------------------------------------------
+|  SECCION VENTAJAS
+|--------------------------------------------------
+*/
+.advantage {
+	background: url("../images/bg-ventaja-destacada.jpg") no-repeat center/contain;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: $roboto-font;
+
+	&__title {
+		color: #fff;
+		font-size: em(50);
+		margin-bottom: 0.5rem;
+	}
+
+	&__subtitle {
+		color: #e7d0c7;
+		font-size: em(32);
+	}
+
+	&__description {
+		color: #fff;
+		font-size: em(22);
+		line-height: 1.3;
+		margin: 2rem auto 1rem;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		border-radius: 0.5rem;
+		padding: 0.5rem 2rem;		
+		font-size: em(18);
+		color: $mid-brown;
+		text-decoration: none;
+		transition: all 0.5s ease;
+		width: 100%;
+		@include media(sm) {
+			width: 30%;
+		}
+		&:hover {
+			background-color: $light-orange;
+			color: #fff;
+			text-decoration: none;
+		}
+		img {
+			margin-right: 0.5rem;
+		}
+	}
+}
+
+/*
+|--------------------------------------------------
+|  SECCION UBICACION
+|--------------------------------------------------
+*/
+.location {
+	.container {
+		@include media(sm) {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+	}
+
+	&__map {
+		border-bottom: 0.5rem solid $dark-orange;
+		margin-bottom: 1rem;
+	}
+
+	&__data {
+		@include media(sm) {
+			padding-left: 2rem;
+		}
+	}
+
+	&__item {
+		font-family: $roboto-font;
+		margin-bottom: 2rem;
+	}
+	&__title {
+		color: #483b30;
+		font-size: em(21);
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+		img {
+			margin-right: 0.5rem;
+		}
+	}
+	&__description {
+		color: #8a827c;
+		font-size: em(17);
+		line-height: 1.2;		
+	}
+}

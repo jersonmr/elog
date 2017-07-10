@@ -1,4 +1,21 @@
 extends ./partials/layout
 
 block content
+  section.slider
+    img(src="images/image-slider-1.jpg", alt="Slider 1").slider__img
+    .container
+    .slider__texto
+      h1 TEXTO DESTACADO
+      h2 TEXTO COMPLEMENTARIO
   
+  // Seccion de servicios destacados
+  include partials/_services-featured  
+
+  // Listado de servicios
+  include partials/_services
+
+  // Ventajas
+  include partials/_advantage   
+
+  // Ubicacion
+  include partials/_location

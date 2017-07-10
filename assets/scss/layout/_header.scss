@@ -1,41 +1,51 @@
-.header {
-  background: url("../images/bg-header.jpg") no-repeat;
-  background-position: center center;  
-  background-attachment: fixed;
-  background-size: cover;
+.header {		
+	background: url("../images/bg-header.jpg") no-repeat top center;  		
+	background-attachment: fixed;
+	background-size: cover;
+	@include media(sm) {
+		background-size: auto;
+	}
 
   &__logo, &__menu {
-    width: 100%;    
-    @include media(sm) {
-      width: 50%;
-    }
+    width: 100%;    		
   }
   &__logo {
     text-align: center;
-    @include media(sm) {
-      text-align: left;
-    }
+		@include media(sm) {
+			width: 50%;
+			text-align: left;
+		}
   }
 
   // Contenedor menu + redes sociales
   &__menu {
-    margin-top: 0.5rem;    
+    margin-top: 0.5rem;  
+		@include media(sm)  {
+			margin-top: 0;
+			width: 50%;
+		}		
   }
   &__sociales {
     a {
       margin: 0 0.25rem;
+			img {
+				transition: all 1s ease;
+				&:hover {
+					transform: rotateY(360deg);
+					transform-style: preserve-3d;
+				}
+			}
     }
   }
   
   .boton-menu {
     background: transparent;
     border: 0;
-    color: $marron-medio;
-    cursor: pointer;
+    color: $mid-brown;    
     font-size: 2rem;
     transition: all 0.5s ease;
     &:hover {
-      color: darken($marron-medio, 10%);
+      color: darken($mid-brown, 10%);
     }
     &:focus {
       outline: 0;
@@ -46,12 +56,22 @@
     width: 100%;
     text-align: center;            
     a {
-      border-bottom: 4px solid $naranja-medio;
+      border-bottom: 4px solid $mid-orange;
       color: #766c64;
       display: block;
       font-family: $roboto-font;
       font-size: em(18);
       padding: 0.5rem 0;
+			transition: all 0.5s ease;
+			&:hover {
+				color: $light-orange;
+				text-decoration: none;
+			}
     }
+		@include media(sm) {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
   }
 }
