@@ -63,6 +63,9 @@
       font-size: em(18);
       padding: 0.5rem 0;
 			transition: all 0.5s ease;
+			@include media(sm) {
+				margin: 0 0.5rem;
+			}
 			&:hover {
 				color: $light-orange;
 				text-decoration: none;
@@ -70,8 +73,7 @@
     }
 		@include media(sm) {
 			display: flex;
-			justify-content: space-between;
-			width: 100%;
+			justify-content: flex-end;			
 		}
   }
 }

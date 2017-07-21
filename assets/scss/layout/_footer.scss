@@ -81,4 +81,15 @@
 		text-align: center;
 		text-transform: uppercase;
 	}
+
+	&__cesticom {
+		a {
+			color: #9e948c;
+			&:after {
+				content: "\f0da";
+				font-family: FontAwesome;
+				margin-left: 0.4rem;
+			}
+		}
+	}
 }
